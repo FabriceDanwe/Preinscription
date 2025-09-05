@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./contact.css">
+</head>
+<body>
+    <!--section acceuil-->
+
+    <section id="container" >
+     <header>
+        <div class="logo">
+            <p style="font-size: 30px;">Contact</p>
+        </div>
+        <!--Responsive menu-->
+        <div class="menu-toggle"></div>
+
+        <ul class="menu">
+            <li><a href="index.html">acceuil</a></li>
+            <li><a href="preinscriptions.php">préinscription</a></li>
+            <li><a href="contact.html">conctact</a></li>
+        </ul>
+     </header>
+     <div class="contenair-text">
+        <h1>Contacter nous</h1>
+        <p>Nous sommes disposez a vous repondre</p>
+        
+    </div>
+    
+      <!--section contact-->
+      <section id="contact">
+        <p class="title-section">Contact</p>
+        <h1 class="sub-title-section">formulaire de contact</h1>
+        <div>
+            <form method="post" action="contact.php" >
+                <label >Nom</label>
+                <input type="text" id="nom" name="nom" placeholder="">
+                <label >Téléphone</label>
+                <input type="text"  id="telephone" name="telephone" placeholder="">
+                <label >Adress Mail</label>
+                <input type="email"  id="email" name="email" placeholder="">
+                <label >Message</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message..."></textarea>
+                <input type="submit" value="Envoyer">
+            </form>
+            <div class="sociale">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+            <div class="image-contact">
+                <img src="image/1700682697355.jpg" alt="">
+            </div>
+        </div>
+      </section>
+      
+
+    <script>
+        const menu_toggle = document.querySelector('header .menu-toggle')
+        const menu =  document.querySelector('header .menu')
+        menu_toggle.onclick = function () {
+            menu_toggle.classList.toggle('active')
+            menu.classList.toggle('response')
+        }
+    </script>
+
+</body>
+</html>

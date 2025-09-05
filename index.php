@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceuil</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <!--section acceuil-->
+
+    <section id="container">
+     <header>
+        <div class="logo">
+            <p style="font-size: 30px;">Preinscriptions</p>
+        </div>
+        <!--Responsive menu-->
+        <div class="menu-toggle"></div>
+
+        <ul class="menu">
+            <li><a href="#">acceuil</a></li>
+            <li><a href="preinscriptions.php">préinscription</a></li>
+            <li><a href="contact.html">conctact</a></li>
+        </ul>
+     </header>
+     <div class="contenair-text">
+        <h1 style="font-size: 25px;">Preinscrivez vous, Pour assurez votre place </h1>
+        <p>Preparez votre avenir avec nous <br> Preinscrivez vous dès maintenant à notre université et découvrez no programmes innovants</p>
+        <a href="preinscriptions.php">Commencez maintenant</a>
+    </div>
+    </section>
+
+     <!--à propos-->
+
+     <section id="a-propos">
+        <div>
+            <p class="title-section">à propos</p>
+            <h1 class="sub-title-section">Bienvenue sur notre site de </h1>
+            <div class="description-photo">
+                <div class="desc">
+                    <p>de preinscriptions en ligne de l'université de Garoua notre institution est fier de vous offrir une plate forme innovante et sécuriser pour faciliter votre processus
+                        d'inscription et vous permettre de rejoindre notre communoté universitaire. avec une offre de formation diversifier et de qualité, nous sommes déterminer
+                        à vous aidez à atteindre vos objectifs accadémique et proffesionnel. Notre équipe est à votre disposition pour vous accompagnez tout au long de votre parcours universitaire 
+                        et de vous fournir les ressources nécessaire pour reussir nous sommes convaincu que notre université est le lieux idéal pour vous permettre de developper
+                        vos compétences, de découvrir de nouvel passion et de vous préparer à un avénir prométteur.Réjoignez nous et découvrais pourquoi l'université et l'une des meileurs 
+                        institutions d'ensignement supérieur au cameroun.
+                    </p>
+                
+                    <H2>Nos services</H2>
+                    <div class="list-services">
+                            <div class="service">
+                                <i class="fas fa-tachometer-check-alt"></i>
+                                <p>RAPIDE</p> 
+                            </div>
+
+                            <div class="service">
+                                <i class="fas fa-money-check-alt"></i>
+                                <p>FACILE</p> 
+                            </div>
+                            
+                            <div class="service">
+                                <i class="fas fa-check"></i>
+                                <p>FIABLE</p> 
+                            </div>                    
+                    </div>
+                    
+                </div>    
+                
+            </div>
+        </div>
+     </section>
+     <!--section Gallerie destination-->
+  
+      <footer>
+        <p>Realiser par Ismael Ousmanou</p>
+      </footer>
+
+
+    <script>
+        const menu_toggle = document.querySelector('header .menu-toggle')
+        const menu =  document.querySelector('header .menu')
+        menu_toggle.onclick = function () {
+            menu_toggle.classList.toggle('active')
+            menu.classList.toggle('response')
+        }
+    </script>
+
+</body>
+</html>
